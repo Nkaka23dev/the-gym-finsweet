@@ -66,10 +66,10 @@ body{
 .hero__img{
     @apply m-auto mt-[100px] 
 } 
-.footer-decended__form{
+.footer-ascend__form{
     @apply bg-[#2B2E3C] w-fit m-auto  rounded-[12px] ;
 }
-.footer-decended__input{
+.footer-ascend__input{
     @apply text-black outline-none bg-transparent p-[12px] placeholder:text-[white] placeholder:opacity-[0.5] text-[16px] pl-[12px];
 }
 .quality-section{
@@ -252,16 +252,16 @@ body{
 .footer__desc{
     @apply text-[16px] leading-[150%] font-[400] mb-[40px]
 }
-.footer-decended{
+.footer-ascend{
     @apply bg-[#1D2130] text-white pr-[5%] pl-[5%] mt-[100px] pt-[50px] pb-[100px]
 }
-.footer-decended__items{
+.footer-ascend__items{
     @apply  flex flex-wrap  text-left gap-[130px]
 }
-.footer-decended__title{
+.footer-ascend__title{
     @apply font-[600] text-[18px] mb-[10px]
 }
-.footer-decended__link{
+.footer-ascend__link{
     @apply font-[400] text-[14px] opacity-[0.6] mb-[12px]
 }
 .footer__logo{
