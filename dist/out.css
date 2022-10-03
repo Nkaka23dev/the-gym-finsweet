@@ -927,6 +927,144 @@ body{
   padding-left: 30px;
 }
 
+.price-hero{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.price-hero__desc{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.87;
+}
+
+.price-hero__button{
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.price-card__header{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.price-card__icon{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.price-card__title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.price-card__title--small{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.6;
+}
+
+.price-card__list{
+  margin-bottom: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.price-card__icon--small{
+  border-radius: 50%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 245 234 / var(--tw-bg-opacity));
+  padding: 4.5px;
+}
+
+.price-card__context{
+  margin-bottom: 30px;
+  margin-top: 25px;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.87;
+}
+
+.price-card__title--middle{
+  text-align: center;
+}
+
+.btn--center{
+  margin: auto;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.price-card{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.price-card__item{
+  border-radius: 24px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.price-card__body{
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.price-card__title--center{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.6;
+}
+
+.price-card__item--background{
+  border: 4px solid #6B7CFF;
+  background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%)
+}
+
+.price-bg{
+  position: absolute;
+  width: 100%;
+  height: 180vh;
+  border-radius: 50%;
+  top: 70%;
+  z-index: -1000;
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e180 17.55%, #9bffa54e 27.56%, #aed2ff75 49.89%, #c9d4ef7a 56.53%, #CACFFA 65.69%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(350px)
+}
+
 .members{
   margin-right: 5%;
   margin-left: 5%;
@@ -1054,6 +1192,22 @@ body{
   font-weight: 600;
 }
 
+.s-card{
+  position: relative;
+  padding-top: 100px;
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+}
+
+.services--sm{
+  margin-left: 0;
+  margin-right: 5%;
+  border-radius: 0px;
+  border-top-right-radius: 67px;
+  padding-left: 5%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .services__img{
   margin-bottom: 20px;
   width: 66.44px;
@@ -1091,4 +1245,77 @@ body{
   padding: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.information__pic{
+  height: 448px;
+}
+
+.information__item--left{
+  position: relative;
+  margin: auto;
+}
+
+.information__desc--sm{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.info__item--right{
+  margin: auto;
+}
+
+.paragraph {
+  color: black
+}
+
+.questions{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-radius: 24px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 242 254 / var(--tw-bg-opacity));
+  padding: 50px;
+}
+
+.questions__card{
+  margin-bottom: 20px;
+  border-radius: 24px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 30px;
+}
+
+.questions__header{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions__icon{
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 4px;
+  width: 20px;
+}
+
+.questions__title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.questions__desc{
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.87;
+}
+
+.plus-icon{
+  height: 1.75rem;
+  font-weight: 700;
 }

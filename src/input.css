@@ -162,6 +162,69 @@ body{
 .security-sec__item--outlined{
     @apply border-l-[3px] border-[#CDC7D2] pl-[30px]
 } 
+.price-hero{
+    @apply mt-[100px] text-center
+}
+.price-hero__desc{
+    @apply font-[400] text-[18px] leading-[150%] text-[#1D2130] opacity-[0.87]
+}
+.price-hero__button{
+    @apply bg-[#E0E4FC] w-fit flex m-auto p-2 rounded-[20px] mt-[20px]
+}
+
+.price-card__header{
+    @apply flex gap-[20px] p-[20px] pl-[40px]
+}
+.price-card__icon{
+    @apply mt-auto mb-auto;
+}
+.price-card__title{
+    @apply font-[700] text-[36px] leading-[120%]
+}
+.price-card__title--small{
+    @apply font-[400] text-[16px] text-[#1D2130] opacity-[0.6] leading-[120%]
+}
+.price-card__list{
+    @apply flex gap-[12px] mb-[15px]
+}
+.price-card__icon--small{
+    @apply p-[4.5px] bg-[#D5F5EA] rounded-[50%]
+}
+.price-card__context{
+    @apply text-center text-[#1D2130] opacity-[0.87] mb-[30px] mt-[25px]
+}
+.price-card__title--middle{
+    @apply text-center
+}
+.btn--center{
+    @apply text-center m-auto flex w-fit
+}
+.price-card{
+    @apply mr-[5%] ml-[5%] grid grid-cols-3 gap-[20px] mt-[100px]
+}
+.price-card__item{
+    @apply bg-white rounded-[24px] pb-[50px] pt-[20px]
+}
+.price-card__body{
+    @apply pl-[40px] mt-[40px]
+}
+.price-card__title--center{
+    @apply font-[400] text-center text-[16px] mb-[30px] text-[#1D2130] opacity-[0.6] leading-[120%]
+}
+.price-card__item--background{
+    border: 4px solid #6B7CFF;
+    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%)
+}
+.price-bg{
+    position: absolute;
+    width: 100%;
+    height: 180vh;
+    border-radius: 50%;
+    top: 70%;
+    z-index: -1000;
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e180 17.55%, #9bffa54e 27.56%, #aed2ff75 49.89%, #c9d4ef7a 56.53%, #CACFFA 65.69%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: blur(350px)
+}
 .members{
     @apply grid grid-cols-3 text-center mr-[5%] ml-[5%] mt-[80px] gap-[20px]
 }
@@ -220,6 +283,13 @@ body{
 .footer__text{
     @apply font-[600] text-[18px] mb-[20px]
 }
+.s-card {
+    @apply relative pt-[100px];
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
+}
+.services--sm{
+    @apply ml-[0] mr-[5%] pl-[5%] rounded-none rounded-tr-[67px] pt-[100px] pb-[100px]
+}
 .services__img{
     @apply w-[66.44px] mb-[20px];
 }
@@ -231,4 +301,40 @@ body{
 }
 .services{
     @apply grid grid-cols-3 m-auto w-fit bg-[#E0E4FC] p-[40px] pt-[50px] pb-[50px] gap-[40px] rounded-[24px] mr-[5%] ml-[5%] mt-[50px];
+}
+.information__pic{
+    @apply h-[448px]
+} 
+.information__item--left{
+    @apply m-auto relative;
+}
+.information__desc--sm{
+    @apply text-[16px] leading-[150%] font-[400];
+}
+.info__item--right{
+    @apply m-auto
+}
+.paragraph {
+    color: black
+}
+.questions{
+    @apply mr-[5%] ml-[5%] grid grid-cols-2 bg-[#F0F2FE] mt-[100px] p-[50px] rounded-[24px]
+}
+.questions__card{
+    @apply bg-white p-[30px] rounded-[24px] mb-[20px]
+}
+.questions__header{
+    @apply flex justify-between mb-[10px]
+}
+.questions__icon{
+    @apply w-[20px] h-[4px] mt-auto mb-auto
+}
+.questions__title{
+    @apply font-[700] text-[24px]
+}
+.questions__desc{
+    @apply text-[#1D2130] opacity-[0.87] text-[16px]
+}
+.plus-icon {
+    @apply h-7 font-bold
 }
