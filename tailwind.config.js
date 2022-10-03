@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./dist/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+     
+      },
+      fontFamily: {
+        cusFont: ['Roboto']
+      }
+    },
   },
   plugins: [],
 }
+ 
