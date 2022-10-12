@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply font-robotoFont overflow-x-hidden
+    @apply font-robotoFont
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-    @apply text-center mt-20 relative;
+    @apply text-center my-20 relative;
 }
 
 .title,
@@ -88,7 +88,7 @@ body {
 }
 
 .quality-section {
-    @apply text-center mt-[100px];
+    @apply text-center mt-20;
 }
 
 .title-sm,
