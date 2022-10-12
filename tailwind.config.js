@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-     
+       lightBlack:'#1D2130'
       },
       fontFamily: {
-        cusFont: ['Roboto']
+        robotoFont: ['Roboto']
       }
     },
   },
