@@ -489,7 +489,7 @@ body {
 }
 
 .footer-icons-section__horizontal-line {
-    @apply border bg-[#888888] opacity-5 w-80;
+    @apply border bg-[#888888] opacity-20 w-80;
 }
 
 .footer-icons-section__contacts-wrapper {
