@@ -777,7 +777,7 @@ body{
 .hero{
   position: relative;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -821,13 +821,14 @@ body{
 .form, 
 .hero__form{
   margin: auto;
+  margin-bottom: 5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .form__input, 
@@ -1010,15 +1011,6 @@ body{
   line-height: 150%;
 }
 
-.additional-info-background {
-  position: absolute;
-  width: 100%;
-  height: 80vh;
-  z-index: -1000;
-  opacity: 0.3;
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
-}
-
 .contact-content-before-footer{
   display: flex;
   height: 24rem;
@@ -1049,13 +1041,6 @@ body{
   height: 8rem;
   align-items: center;
   justify-content: center;
-}
-
-.contact-bg {
-  position: absolute;
-  width: 100%;
-  height: 80vh;
-  z-index: -1000;
 }
 
 .product-header-description{
@@ -1126,6 +1111,11 @@ body{
   background-color: rgb(244 245 247 / var(--tw-bg-opacity));
 }
 
+.information__image-size{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .information__details{
   display: flex;
   gap: 20px;
@@ -1145,7 +1135,6 @@ body{
 
 .feature-section--background{
   margin-bottom: 60px;
-  background: rgba(215, 152, 225, 0.15);
 }
 
 .feature-section__item--outlined{
@@ -1329,7 +1318,6 @@ body{
 .card{
   position: relative;
   padding-top: 100px;
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
 }
 
 .services--sm, 
@@ -1602,44 +1590,13 @@ body{
 
 .hero__text{
   margin-bottom: 30px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
   text-align: center;
-  color: #1D2130;
-  opacity: 0.87;
-}
-
-.hero__background {
-  position: absolute;
-  width: 524px;
-  height: 496px;
-  border-radius: 50%;
-  margin: auto;
-  left: 10%;
-  z-index: -1000;
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-  filter: blur(200px);
-}
-
-.price-bg {
-  position: absolute;
-  width: 100%;
-  height: 180vh;
-  border-radius: 50%;
-  top: 70%;
-  z-index: -1000;
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e180 17.55%, #9bffa54e 27.56%, #aed2ff75 49.89%, #c9d4ef7a 56.53%, #CACFFA 65.69%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-  filter: blur(350px)
-}
-
-.price-card__item--background {
-  border: 4px solid #6B7CFF;
-  background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%)
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.8;
 }
 
 @media (min-width: 768px){

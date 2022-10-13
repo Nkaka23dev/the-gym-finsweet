@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-    @apply text-center my-20 relative;
+    @apply text-center my-20 mb-10 relative;
 }
 
 .title,
@@ -55,8 +55,9 @@ body {
 
 .form,
 .hero__form {
-    @apply bg-white w-fit m-auto p-2 rounded-xl;
+    @apply bg-white w-fit m-auto p-4 rounded-xl mb-20;
 }
+
 .form__input,
 .hero__input {
     @apply text-black outline-none w-96 text-lg pl-1;
@@ -153,7 +154,6 @@ body {
     @apply bg-[#FFACAC] h-[48px] w-[48px] mt-auto mb-auto p-[17px] rounded-[50%];
 }
 
-
 .information__details {
     @apply mb-[30px]
 }
@@ -161,15 +161,6 @@ body {
 .information__desc--sm,
 .markerting__description--sm {
     @apply text-[16px] leading-[150%] font-[400];
-}
-
-.additional-info-background {
-    position: absolute;
-    width: 100%;
-    height: 80vh;
-    z-index: -1000;
-    opacity: 0.3;
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
 }
 
 .contact-content-before-footer {
@@ -190,13 +181,6 @@ body {
 
 .about-hero {
     @apply h-32 flex items-center justify-center;
-}
-
-.contact-bg {
-    position: absolute;
-    width: 100%;
-    height: 80vh;
-    z-index: -1000;
 }
 
 .product-header-description {
@@ -243,6 +227,10 @@ body {
     @apply bg-[#F4F5F7]
 }
 
+.information__image-size {
+    @apply w-6 h-6
+}
+
 .information__details {
     @apply flex gap-[20px];
 }
@@ -260,7 +248,6 @@ body {
 
 .feature-section--background {
     @apply mb-[60px];
-    background: rgba(215, 152, 225, 0.15);
 }
 
 .feature-section__item--outlined {
@@ -362,7 +349,6 @@ body {
 .s-card,
 .card {
     @apply relative pt-[100px];
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e173 17.55%, #9bffa563 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
 }
 
 .services--sm,
@@ -415,12 +401,15 @@ body {
 .paragraph {
     @apply text-black;
 }
+
 .questions {
     @apply mr-[5%] ml-[5%] grid grid-cols-2 bg-[#F0F2FE] mt-[100px] p-[50px] rounded-[24px]
 }
+
 .questions__card {
     @apply bg-white p-[30px] rounded-[24px] mb-[20px]
 }
+
 .questions__header {
     @apply flex justify-between mb-[10px]
 }
@@ -440,6 +429,7 @@ body {
 .plus-icon {
     @apply h-7 font-bold
 }
+
 .footer {
     @apply h-56 bg-lightBlack flex justify-between px-32 pt-10
 }
@@ -503,43 +493,7 @@ body {
 .footer-icons-section__box-icon {
     @apply opacity-[0.5]
 }
+
 .hero__text {
-    @apply mb-[30px];
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: #1D2130;
-    opacity: 0.87;
-}
-.hero__background {
-    position: absolute;
-    width: 524px;
-    height: 496px;
-    border-radius: 50%;
-    margin: auto;
-    left: 10%;
-    z-index: -1000;
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-    filter: blur(200px);
-}
-
-.price-bg {
-    position: absolute;
-    width: 100%;
-    height: 180vh;
-    border-radius: 50%;
-    top: 70%;
-    z-index: -1000;
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #d798e180 17.55%, #9bffa54e 27.56%, #aed2ff75 49.89%, #c9d4ef7a 56.53%, #CACFFA 65.69%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    filter: blur(350px)
-}
-
-.price-card__item--background {
-    border: 4px solid #6B7CFF;
-    background: linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%)
+    @apply mb-[30px] text-lightBlack text-center opacity-80 font-semibold leading-7 font-robotoFont;
 }
