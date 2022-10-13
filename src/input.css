@@ -1,3 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-robotoFont
+}
+
+.navbar {
+    @apply flex justify-between py-5 px-12 h-20 text-sm;
+}
+
+.navbar__items-container {
+    @apply flex gap-10 items-center
+}
+
+.navbar__image {
+    @apply h-6
+}
+
+.navbar__img-wrap {
+    @apply flex items-center
+}
+
+.hero {
+    @apply text-center my-20 mb-10 relative;
+}
+
+.title,
+.hero__title,
+.quality-section__title,
+.information__title,
+.additional__info-title,
+.sales__title,
+.feature__title,
+.customer-experience-title,
+.product-header-description__title,
+.markerting__title,
+.time-tracker__title,
+.lead-generation__title,
+.remote-team-title,
+.card__title {
+    @apply text-5xl font-bold leading-none mb-10 text-lightBlack;
+}
+
+.feature {
+    @apply text-2xl font-bold leading-10 mb-10 text-lightBlack text-center;
+}
+
+.information__title {
+    @apply text-2xl
+}
+
+.form,
+.hero__form {
+    @apply bg-white w-fit m-auto p-4 rounded-xl mb-20;
+}
+
+.form__input,
+.hero__input {
+    @apply text-black outline-none w-96 text-lg pl-1;
+}
+
+.navbar__btn,
+.btn,
+.hero__btn,
+.additional-info__btn,
+.product-header-description__btn {
+    @apply bg-lightBlack text-white py-2 px-7 rounded-lg
+}
+
+.additional-info__btn--raised {
+    @apply mt-10
+}
+
+.btn--bg {
+    @apply text-black bg-white
+}
+
+.btn--white,
+.product-header-description__btn--white-bordered {
+    @apply bg-white text-black border-[3px];
+}
+
+.hero__img {
+    @apply m-auto mt-[100px]
+}
+
+.quality-section {
+    @apply text-center mt-20;
+}
+
+.title-sm,
+.quality-section__title--blue,
+.information__title--small,
+.sales__small-title,
+.markerting__small-title,
+.time-tracker__small-title,
+.lead-generation__small-title,
+.remote-team__small-title,
+.remote-team__small-title {
+    @apply text-[24px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] mb-[20px];
+}
+
+.feature-section {
+    @apply grid grid-cols-3 m-auto w-fit bg-[#E0E4FC] p-[40px] pt-[50px] pb-[50px] gap-[40px] rounded-[24px] mr-[5%] ml-[5%] mt-[50px];
+}
+
+.feature-section__img {
+    @apply w-[66.44px] mb-[20px];
+}
+
+.feature-section__title {
+    @apply text-[32px] font-[700] leading-[120%] mt-[10px] mb-[20px];
+}
+
+.feature-section__description,
+.sales__description {
+    @apply font-[400] text-[16px] opacity-[0.87] mt-[10px];
+}
+
+.information,
+.sales,
+.markerting,
+.time-tracker,
+.lead-generation,
+.remote-team {
+    @apply mr-[5%] ml-[5%] mt-[120px] gap-[40px] grid grid-cols-2 mb-[100px];
+}
+
+.information__desc,
+.markerting__description,
+.time-tracker__description,
+.lead-generation__description {
+    @apply text-[20px] font-[400] leading-[150%];
+}
+
+.information__item--right,
+.sales__item--right,
+.markerting__image-container,
+.time-tracker__image-container {
+    @apply m-auto
+}
+
+.information__details,
+.sales__details {
+    @apply flex gap-[20px];
+}
+
+.information__icon,
+.sales__icon {
+    @apply bg-[#FFACAC] h-[48px] w-[48px] mt-auto mb-auto p-[17px] rounded-[50%];
+}
+
+.information__details {
+    @apply mb-[30px]
+}
+
+.information__desc--sm,
+.markerting__description--sm {
+    @apply text-[16px] leading-[150%] font-[400];
+}
+
+.contact-content-before-footer {
+    @apply h-96 flex items-center justify-center;
+}
+
+.contact-content-before-header__wrapper {
+    @apply text-center text-sm py-5;
+}
+
+.contact-content-before-footer__title {
+    @apply text-3xl font-bold
+}
+
+.contact-content-before-footer__sub-title {
+    @apply mt-2
+}
+
+.about-hero {
+    @apply h-32 flex items-center justify-center;
+}
+
+.product-header-description {
+    @apply mr-[5%] ml-[5%] py-5 grid grid-cols-2 bg-transparent;
+}
+
+.product-header-description__item {
+    @apply m-auto bg-transparent mt-5
+}
+
+.additional-info {
+    @apply mr-[5%] ml-[5%] mt-[200px] grid grid-cols-2 bg-transparent;
+}
+
+.additional-info--top {
+    @apply mt-[50px];
+}
+
+.additional-info__item--context {
+    @apply m-auto bg-transparent
+}
+
+.additional-info__description,
+.product-header-description__subject {
+    @apply text-[16px] leading-[150%] font-[400] mb-[30px];
+}
+
+.additional-info__buttons,
+.product-header-description__btn-container {
+    @apply flex gap-[20px]
+}
+
+.campany-logo-container,
+.comapny {
+    @apply flex mt-24 mb-2 gap-[60px] px-20
+}
+
+.campany-logo-conatiner__image {
+    @apply w-[170px]
+}
+
+.information__icon--fill,
+.sales__icon--fill {
+    @apply bg-[#F4F5F7]
+}
+
+.information__image-size {
+    @apply w-6 h-6
+}
+
+.information__details {
+    @apply flex gap-[20px];
+}
+
+.title--middle,
+.feature__title--middle,
+.customer-experience-title--middle,
+.card__title--middle {
+    @apply text-center
+}
+
+.feature-section__img {
+    @apply w-[66.44px] mb-[20px];
+}
+
+.feature-section--background {
+    @apply mb-[60px];
+}
+
+.feature-section__item--outlined {
+    @apply border-l-[3px] border-[#CDC7D2] pl-[30px]
+}
+
+.price-hero {
+    @apply mt-[100px] text-center
+}
+
+.price-hero__desc {
+    @apply font-[400] text-[18px] leading-[150%] text-lightBlack opacity-[0.87]
+}
+
+.price-hero__button {
+    @apply bg-[#E0E4FC] w-fit flex m-auto p-2 rounded-[20px] mt-[20px]
+}
+
+.price-card__header {
+    @apply flex gap-[20px] p-[20px] pl-[40px]
+}
+
+.price-card__icon {
+    @apply mt-auto mb-auto;
+}
+
+.price-card__title {
+    @apply font-[700] text-[36px] leading-[120%]
+}
+
+.price-card__title--small {
+    @apply font-[400] text-[16px] text-lightBlack opacity-[0.6] leading-[120%]
+}
+
+.price-card__list {
+    @apply flex gap-[12px] mb-[15px]
+}
+
+.price-card__icon--small {
+    @apply p-[4.5px] bg-[#D5F5EA] rounded-[50%]
+}
+
+.price-card__context {
+    @apply text-center text-lightBlack opacity-[0.87] mb-[30px] mt-[25px]
+}
+
+.price-card__title--middle {
+    @apply text-center
+}
+
+.btn--center {
+    @apply text-center m-auto flex w-fit
+}
+
+.price-card {
+    @apply mr-[5%] ml-[5%] grid grid-cols-3 gap-[20px] mt-[100px]
+}
+
+.price-card__item {
+    @apply bg-white rounded-[24px] pb-[50px] pt-[20px]
+}
+
+.price-card__body {
+    @apply pl-[40px] mt-[40px]
+}
+
+.price-card__title--center {
+    @apply font-[400] text-center text-[16px] mb-[30px] text-lightBlack opacity-[0.6] leading-[120%]
+}
+
+.members {
+    @apply grid grid-cols-3 text-center mr-[5%] ml-[5%] mt-[80px] gap-[20px]
+}
+
+.members__img {
+    @apply w-[56px] m-auto
+}
+
+.members__item {
+    @apply border-[2px] p-[50px] rounded-[24px] pl-[40px] pr-[40px]
+}
+
+.members__description {
+    @apply font-[600] text-[18px] leading-[150%] mb-[20px]
+}
+
+.members__img {
+    @apply mb-[20px]
+}
+
+.members__name {
+    @apply font-[500] text-[20px] leading-[150%]
+}
+
+.members__role {
+    @apply font-[400] text-lightBlack text-[12px] leading-5
+}
+
+.s-card,
+.card {
+    @apply relative pt-[100px];
+}
+
+.services--sm,
+.card__service--small {
+    @apply ml-[0] mr-[5%] pl-[5%] rounded-none rounded-tr-[67px] pt-[100px] pb-[100px]
+}
+
+.services__img,
+.card__image {
+    @apply w-[66.44px] mb-[20px];
+}
+
+.services__title,
+.card__title {
+    @apply text-[32px] font-[700] leading-[120%] mt-[10px] mb-[20px];
+}
+
+.services__decs,
+.card__service-description {
+    @apply font-[400] text-[16px] opacity-[0.87] mt-[10px];
+}
+
+.services,
+.card__service {
+    @apply grid grid-cols-3 m-auto w-fit bg-[#E0E4FC] p-[40px] pt-[50px] pb-[50px] gap-[40px] rounded-[24px] mr-[5%] ml-[5%] mt-[50px];
+}
+
+.information__pic,
+.time-tracker__image {
+    @apply h-[448px]
+}
+
+.information__item--left,
+.sales__item--left,
+.markerting__item--left,
+.time-tracker__subject,
+.lead-generation__item,
+.remote-team__subject {
+    @apply m-auto relative;
+}
+
+.information__desc--sm {
+    @apply text-[16px] leading-[150%] font-[400];
+}
+
+.info__item--right {
+    @apply m-auto
+}
+
+.paragraph {
+    @apply text-black;
+}
+
+.questions {
+    @apply mr-[5%] ml-[5%] grid grid-cols-2 bg-[#F0F2FE] mt-[100px] p-[50px] rounded-[24px]
+}
+
+.questions__card {
+    @apply bg-white p-[30px] rounded-[24px] mb-[20px]
+}
+
+.questions__header {
+    @apply flex justify-between mb-[10px]
+}
+
+.questions__icon {
+    @apply w-[20px] h-[4px] mt-auto mb-auto
+}
+
+.questions__title {
+    @apply font-[700] text-[24px]
+}
+
+.questions__desc {
+    @apply text-lightBlack opacity-[0.87] text-[16px]
+}
+
+.plus-icon {
+    @apply h-7 font-bold
+}
+
+.footer {
+    @apply h-56 bg-lightBlack flex justify-between px-32 pt-10
+}
+
+.footer__flex-column {
+    @apply py-5 leading-5 space-y-3
+}
+
+.footer__title {
+    @apply text-white font-bold
+}
+
+.footer__items {
+    @apply text-white opacity-50 space-y-3
+}
+
+.footer__item {
+    @apply text-sm
+}
+
+.footer__logo {
+    @apply text-white text-2xl font-bold
+}
+
+.footer__item--white {
+    @apply text-white;
+}
+
+.footer__logo-content-wrapper {
+    @apply space-y-3 mt-10;
+}
+
+.footer__form {
+    @apply relative mt-10
+}
+
+.footer__input {
+    @apply py-2 pl-8 pr-24 rounded-md bg-[#2B2E3C]
+}
+
+.footer__btn {
+    @apply bg-white py-2 rounded-md px-4 absolute right-0;
+}
+
+.footer-icons-section {
+    @apply bg-lightBlack px-32 h-36 flex justify-between items-center
+}
+
+.footer-icons-section__horizontal-line {
+    @apply border bg-[#888888] opacity-20 w-80;
+}
+
+.footer-icons-section__contacts-wrapper {
+    @apply flex justify-evenly gap-2 flex-1
+}
+
+.footer-icons-section__logo {
+    @apply text-white opacity-[0.5] text-sm;
+}
+
+.footer-icons-section__box-icon {
+    @apply opacity-[0.5]
+}
+
+.hero__text {
+    @apply mb-[30px] text-lightBlack text-center opacity-80 font-semibold leading-7 font-robotoFont;
+}
